@@ -469,10 +469,8 @@ Wire Wire Line
 	9500 3850 9650 3850
 Text GLabel 5150 6375 0    50   Input ~ 0
 IO5
-Text GLabel 6450 5475 1    50   Input ~ 0
+Text GLabel 6400 5375 0    50   Input ~ 0
 NC
-Text GLabel 6650 5475 1    50   Input ~ 0
-NO
 Text GLabel 6550 6075 3    50   Input ~ 0
 LINE_F
 Wire Wire Line
@@ -490,14 +488,12 @@ Text GLabel 1200 1125 0    50   Input ~ 0
 LINE
 Text GLabel 1200 1225 0    50   Input ~ 0
 NEUT
-Text GLabel 3300 1225 0    50   Input ~ 0
+Text GLabel 2900 1250 0    50   Input ~ 0
 NEUT_F
 Text GLabel 1200 1325 0    50   Input ~ 0
 AC_GND
-Text GLabel 3300 1325 0    50   Input ~ 0
+Text GLabel 2900 1350 0    50   Input ~ 0
 AC_GND
-Text GLabel 3300 1125 0    50   Input ~ 0
-LINE_OUT
 Wire Notes Line
 	750  1900 3900 1900
 Text Notes 800  1850 0    50   ~ 0
@@ -512,7 +508,7 @@ VBUS
 Wire Wire Line
 	1200 1425 1200 1325
 Wire Wire Line
-	3300 1425 3300 1325
+	3200 1450 3200 1350
 Wire Wire Line
 	1800 2600 1750 2600
 Wire Wire Line
@@ -542,22 +538,18 @@ Wire Wire Line
 Wire Wire Line
 	5450 6375 5550 6375
 Wire Wire Line
-	2300 850  2400 850 
+	2150 850  2250 850 
 Wire Wire Line
-	2300 1250 2400 1250
+	2150 1250 2250 1250
 Wire Wire Line
-	2300 1650 2400 1650
-Text GLabel 2300 850  0    50   Input ~ 0
+	2150 1650 2250 1650
+Text GLabel 2150 850  0    50   Input ~ 0
 NC
-Text GLabel 2300 1250 0    50   Input ~ 0
+Text GLabel 2150 1250 0    50   Input ~ 0
 LINE_OUT
-Text GLabel 2300 1650 0    50   Input ~ 0
+Text GLabel 2150 1650 0    50   Input ~ 0
 NO
-Connection ~ 2400 1250
-Wire Notes Line
-	6150 6600 10300 6600
-Wire Notes Line
-	7150 6600 7150 4850
+Connection ~ 2250 1250
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5FAE8593
@@ -572,18 +564,18 @@ $EndComp
 $Comp
 L SamacSys_Parts:C1H10 F3
 U 1 1 5FA3943F
-P 2400 1400
-F 0 "F3" V 2800 1525 50  0000 C CNN
-F 1 "C1H10" V 2700 1600 50  0000 C CNN
-F 2 "SamacSys_Parts:FUSC3216X85N" H 2950 1450 50  0001 L CNN
-F 3 "" H 2950 1350 50  0001 L CNN
-F 4 "High Current Rated Fast Acting Chip Fuse" H 2950 1250 50  0001 L CNN "Description"
-F 5 "0.85" H 2950 1150 50  0001 L CNN "Height"
-F 6 "530-C1H10" H 2950 1050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Bel-Fuse/C1H10?qs=GtFly9OVs8%252BDhtlSiM%2Fykw%3D%3D" H 2950 950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Stewart Connector" H 2950 850 50  0001 L CNN "Manufacturer_Name"
-F 9 "C1H10" H 2950 750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2400 1400
+P 2250 1400
+F 0 "F3" V 2650 1525 50  0000 C CNN
+F 1 "C1H10" V 2550 1600 50  0000 C CNN
+F 2 "SamacSys_Parts:FUSC3216X85N" H 2800 1450 50  0001 L CNN
+F 3 "" H 2800 1350 50  0001 L CNN
+F 4 "High Current Rated Fast Acting Chip Fuse" H 2800 1250 50  0001 L CNN "Description"
+F 5 "0.85" H 2800 1150 50  0001 L CNN "Height"
+F 6 "530-C1H10" H 2800 1050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bel-Fuse/C1H10?qs=GtFly9OVs8%252BDhtlSiM%2Fykw%3D%3D" H 2800 950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Stewart Connector" H 2800 850 50  0001 L CNN "Manufacturer_Name"
+F 9 "C1H10" H 2800 750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2250 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -600,12 +592,12 @@ $EndComp
 $Comp
 L power:Earth #PWR07
 U 1 1 5FF0A7F3
-P 3300 1425
-F 0 "#PWR07" H 3300 1175 50  0001 C CNN
-F 1 "Earth" H 3305 1252 50  0000 C CNN
-F 2 "" H 3300 1425 50  0001 C CNN
-F 3 "~" H 3300 1425 50  0001 C CNN
-	1    3300 1425
+P 3200 1450
+F 0 "#PWR07" H 3200 1200 50  0001 C CNN
+F 1 "Earth" H 3205 1277 50  0000 C CNN
+F 2 "" H 3200 1450 50  0001 C CNN
+F 3 "~" H 3200 1450 50  0001 C CNN
+	1    3200 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -628,17 +620,6 @@ F 1 "VBUS" H 5815 1173 50  0000 C CNN
 F 2 "" H 5800 1000 50  0001 C CNN
 F 3 "" H 5800 1000 50  0001 C CNN
 	1    5800 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:NEMA-5-15R-Female J2
-U 1 1 5FE89210
-P 3600 975
-F 0 "J2" H 3525 1075 50  0000 L CNN
-F 1 "NEMA-5-15R-Female" H 3000 975 50  0000 L CNN
-F 2 "SamacSys_Parts:NEMA-5-15R-Female" H 3600 975 50  0001 C CNN
-F 3 "https://www.heyco.com/Power_Components/pdf/Preassembled-Cordset-Components-Female.pdf" H 3600 975 50  0001 C CNN
-	1    3600 975 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1424,18 +1405,18 @@ $EndComp
 $Comp
 L SamacSys_Parts:C1H10 F4
 U 1 1 5FA54D34
-P 2400 1800
-F 0 "F4" V 2800 1925 50  0000 C CNN
-F 1 "C1H10" V 2700 2000 50  0000 C CNN
-F 2 "SamacSys_Parts:FUSC3216X85N" H 2950 1850 50  0001 L CNN
-F 3 "" H 2950 1750 50  0001 L CNN
-F 4 "High Current Rated Fast Acting Chip Fuse" H 2950 1650 50  0001 L CNN "Description"
-F 5 "0.85" H 2950 1550 50  0001 L CNN "Height"
-F 6 "530-C1H10" H 2950 1450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Bel-Fuse/C1H10?qs=GtFly9OVs8%252BDhtlSiM%2Fykw%3D%3D" H 2950 1350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Stewart Connector" H 2950 1250 50  0001 L CNN "Manufacturer_Name"
-F 9 "C1H10" H 2950 1150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2400 1800
+P 2250 1800
+F 0 "F4" V 2650 1925 50  0000 C CNN
+F 1 "C1H10" V 2550 2000 50  0000 C CNN
+F 2 "SamacSys_Parts:FUSC3216X85N" H 2800 1850 50  0001 L CNN
+F 3 "" H 2800 1750 50  0001 L CNN
+F 4 "High Current Rated Fast Acting Chip Fuse" H 2800 1650 50  0001 L CNN "Description"
+F 5 "0.85" H 2800 1550 50  0001 L CNN "Height"
+F 6 "530-C1H10" H 2800 1450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bel-Fuse/C1H10?qs=GtFly9OVs8%252BDhtlSiM%2Fykw%3D%3D" H 2800 1350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Stewart Connector" H 2800 1250 50  0001 L CNN "Manufacturer_Name"
+F 9 "C1H10" H 2800 1150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2250 1800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1460,8 +1441,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b
 	1    5000 1300
 	-1   0    0    -1  
 $EndComp
-Wire Notes Line
-	10300 6600 10300 650 
 Connection ~ 7500 2250
 Wire Wire Line
 	7500 3050 7500 2950
@@ -1551,31 +1530,31 @@ Text GLabel 8900 5450 3    50   Input ~ 0
 TXD0
 Wire Notes Line
 	7150 5800 10300 5800
-Text GLabel 8950 6250 1    50   Input ~ 0
+Text GLabel 8950 6300 1    50   Input ~ 0
 SPI_SS
-Text Notes 7200 6550 0    50   ~ 0
+Text Notes 7200 6650 0    50   ~ 0
 SPI & I2C Headers
-Text GLabel 8250 6250 1    50   Input ~ 0
+Text GLabel 8250 6300 1    50   Input ~ 0
 I2C_SCL
-Text GLabel 8350 6250 1    50   Input ~ 0
+Text GLabel 8350 6300 1    50   Input ~ 0
 I2C_SDA
-Text GLabel 8550 6250 1    50   Input ~ 0
+Text GLabel 8550 6300 1    50   Input ~ 0
 GND
-Text GLabel 8650 6250 1    50   Input ~ 0
+Text GLabel 8650 6300 1    50   Input ~ 0
 SPI_SCLK
-Text GLabel 8750 6250 1    50   Input ~ 0
+Text GLabel 8750 6300 1    50   Input ~ 0
 SPI_MISO
-Text GLabel 8850 6250 1    50   Input ~ 0
+Text GLabel 8850 6300 1    50   Input ~ 0
 SPI_MOSI
 $Comp
 L Connector_Generic:Conn_01x08 J4
 U 1 1 5FD421A9
-P 8550 6450
-F 0 "J4" V 8422 5962 50  0000 R CNN
-F 1 "0.1\" (2.54mm) Headers" V 8513 5962 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 8550 6450 50  0001 C CNN
-F 3 "~" H 8550 6450 50  0001 C CNN
-	1    8550 6450
+P 8550 6500
+F 0 "J4" V 8422 6012 50  0000 R CNN
+F 1 "0.1\" (2.54mm) Headers" V 8513 6012 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 8550 6500 50  0001 C CNN
+F 3 "~" H 8550 6500 50  0001 C CNN
+	1    8550 6500
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -1589,7 +1568,7 @@ F 3 "" H 4550 5150 50  0001 C CNN
 	1    4550 5150
 	1    0    0    -1  
 $EndComp
-Text GLabel 8450 6250 1    50   Input ~ 0
+Text GLabel 8450 6300 1    50   Input ~ 0
 +3.3V
 Text GLabel 3050 7000 3    50   Input ~ 0
 SPI_MISO
@@ -1642,10 +1621,6 @@ Wire Notes Line
 	750  650  750  7850
 Wire Notes Line
 	4800 4850 4800 7850
-Wire Notes Line
-	750  7850 6150 7850
-Wire Notes Line
-	6150 6600 6150 7850
 Wire Wire Line
 	4550 6525 4550 6570
 Wire Wire Line
@@ -1653,8 +1628,6 @@ Wire Wire Line
 Connection ~ 4550 6570
 Wire Wire Line
 	4550 6570 4550 6700
-Text Notes 7275 6200 0    50   ~ 0
-Add tri-state buffer instead of resistors to SPI bus\n
 Wire Wire Line
 	4550 7000 4550 7200
 Connection ~ 3900 6500
@@ -1681,4 +1654,92 @@ Wire Wire Line
 	4550 5650 4550 6000
 Wire Notes Line
 	8450 4850 8450 650 
+Wire Wire Line
+	6650 5475 6650 5375
+Wire Wire Line
+	6450 5475 6450 5375
+Connection ~ 6650 5375
+Wire Wire Line
+	6650 5375 6650 5300
+Wire Wire Line
+	6400 5375 6450 5375
+Connection ~ 6450 5375
+Wire Wire Line
+	6450 5375 6450 5300
+$Comp
+L SamacSys_Parts:NEMA-5-15R-Female J2
+U 1 1 5FE89210
+P 3500 1000
+F 0 "J2" H 3425 1150 50  0000 L CNN
+F 1 "NEMA-5-15R-Female" H 3000 1050 50  0000 L CNN
+F 2 "SamacSys_Parts:NEMA-5-15R-Female" H 3500 1000 50  0001 C CNN
+F 3 "https://www.heyco.com/Power_Components/pdf/Preassembled-Cordset-Components-Female.pdf" H 3500 1000 50  0001 C CNN
+	1    3500 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 1150 0    50   Input ~ 0
+LINE_OUT
+Wire Wire Line
+	6675 5375 6650 5375
+Text GLabel 6675 5375 2    50   Input ~ 0
+NO
+$Comp
+L Connector:TestPoint SP1
+U 1 1 60055FBD
+P 2900 1025
+F 0 "SP1" V 2900 1225 50  0000 L CNN
+F 1 "TestPoint" H 2750 1275 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D4.0mm" H 3100 1025 50  0001 C CNN
+F 3 "~" H 3100 1025 50  0001 C CNN
+	1    2900 1025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 1250 2900 1250
+Wire Wire Line
+	3200 1350 2900 1350
+Connection ~ 3200 1350
+$Comp
+L Connector:TestPoint SP2
+U 1 1 600044FE
+P 6450 5300
+F 0 "SP2" H 6350 5525 50  0000 L CNN
+F 1 "TestPoint" H 6300 5550 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D4.0mm" H 6650 5300 50  0001 C CNN
+F 3 "~" H 6650 5300 50  0001 C CNN
+	1    6450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint SP3
+U 1 1 60004D06
+P 6650 5300
+F 0 "SP3" H 6600 5525 50  0000 L CNN
+F 1 "TestPoint" H 6500 5550 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D4.0mm" H 6850 5300 50  0001 C CNN
+F 3 "~" H 6850 5300 50  0001 C CNN
+	1    6650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1150 3025 1150
+Wire Wire Line
+	2900 1025 3025 1025
+Wire Wire Line
+	3025 1025 3025 1150
+Connection ~ 3025 1150
+Wire Wire Line
+	3025 1150 3200 1150
+Text Notes 4875 7325 0    50   ~ 0
+Note: \nSP1 will connect to SP2 or SP3,\nvia a manually-soldered wire,\nbased on user-selected\nNormally-Open or Normally-\nClosed relay operation.
+Wire Notes Line
+	750  7850 6200 7850
+Wire Notes Line
+	6200 6700 10300 6700
+Wire Notes Line
+	10300 650  10300 6700
+Wire Notes Line
+	7150 4850 7150 6700
+Wire Notes Line
+	6200 6700 6200 7850
 $EndSCHEMATC
